@@ -12,7 +12,7 @@ Before running Spring boot app locally there is a few things to adjust.
  3. For *salesforce.com* integration login in sales force and in SSO integration create new Single-Sign-On configuration from **saml-idp-metadata.xml**, and download the metadata xml file and put the content in **sp1-metadata.xml** file in resource folder.
  4. For *sptest.iamshowcase.com*  go to Instructions/IDP initiated SSO and load the **saml-idp-metadata.xml** then download the sp metadata xml content to **sp2-metadata.xml** file form resource folder. Login url will be generated e.g *https://sptest.iamshowcase.com/ixs?idp=a058f305cb1126eaa86fd2dc97ac75bdea56b137*
  5. In **CustomAuthenticationProvider** where the simple custom security logic is to check input word from login page (in real implementation probably etg will be called)
- 6. In **** class there is getAssertion method where user name is modified to be a email (email should be a username on salesforce), line to modified:
+ 6. In **IdpInitatedLoginFilterCustom** class there is getAssertion method where user name is modified to be a email (email should be a username on salesforce), line to modified:
   **return provider.assertion(recipient, authentication.getName() + {the rest of salesforce username}, NameId.PERSISTENT);**
 
 ###   Running the spring boot idp application
