@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://branko.my.salesforce.com" validUntil="2029-06-08T20:58:27.983Z" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIErDCCA5SgAwIBAgIOAWsdyD0VAAAAAHbtGwYwDQYJKoZIhvcNAQELBQAwgZAx
+                        KDAmBgNVBAMMH1NlbGZTaWduZWRDZXJ0XzAzSnVuMjAxOV8xNDM5NTAxGDAWBgNV
+                        BAsMDzAwRDRQMDAwMDAwalUxbzEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAU
+                        BgNVBAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0Ew
+                        HhcNMTkwNjAzMTQzOTUwWhcNMjAwNjAzMTIwMDAwWjCBkDEoMCYGA1UEAwwfU2Vs
+                        ZlNpZ25lZENlcnRfMDNKdW4yMDE5XzE0Mzk1MDEYMBYGA1UECwwPMDBENFAwMDAw
+                        MDBqVTFvMRcwFQYDVQQKDA5TYWxlc2ZvcmNlLmNvbTEWMBQGA1UEBwwNU2FuIEZy
+                        YW5jaXNjbzELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcN
+                        AQEBBQADggEPADCCAQoCggEBANmoiMieIescJ7Ch/xyeQYtkna/gq8iPgsRqjbjd
+                        WU/LMaAU6Tum727HxCblHrFny3lXFnS7VBGO3qXTAgkz1h3JoCquE6TU+MwNfJDS
+                        j/Ruzcwb6FY2uNuLdGBWVCxfCQ1/J4nJptUQP0bNhHzt5oJE7ky0Q+VWRfT/WGNT
+                        VNqgnk9kwOb/dPc6wKbGvMmGM4vzWiRhskROwW4TpT+6AevgxAfeOwJAu96ReHwq
+                        B7UsJjN5Ymm6ldJaP8q+yXW1YzdrM0CvJcBk6K0oAvb/T4YC2qIXd3b7ouA1uClz
+                        3GPOyRJ7mdW0F4lS9PY/7WxV+tRQBz84XcURU5gfqTZdjdsCAwEAAaOCAQAwgf0w
+                        HQYDVR0OBBYEFL9DWyI/1/DeJSmNSkG7kF5VqUvrMA8GA1UdEwEB/wQFMAMBAf8w
+                        gcoGA1UdIwSBwjCBv4AUv0NbIj/X8N4lKY1KQbuQXlWpS+uhgZakgZMwgZAxKDAm
+                        BgNVBAMMH1NlbGZTaWduZWRDZXJ0XzAzSnVuMjAxOV8xNDM5NTAxGDAWBgNVBAsM
+                        DzAwRDRQMDAwMDAwalUxbzEXMBUGA1UECgwOU2FsZXNmb3JjZS5jb20xFjAUBgNV
+                        BAcMDVNhbiBGcmFuY2lzY28xCzAJBgNVBAgMAkNBMQwwCgYDVQQGEwNVU0GCDgFr
+                        Hcg9FQAAAAB27RsGMA0GCSqGSIb3DQEBCwUAA4IBAQDEJLr6qlC+fVzVdVPJWkTk
+                        7K5hSPoqbzyXpfWToQqcIqymbpQXwLIq74ADufg+57OoQ14vWAyHQ2gQjKE9Wm3N
+                        ecZbBQTnHQiVtnVf1ml9OrzTsBBekKHLoR8O8OX1bLBZ1BH04G/FlmAG3i/zKs+o
+                        +DiMcyu/1PdBTKQQw90mjKYdg6DLT71ysvPweV5CWUZrb+it76JWLs2JqpG4O9Bs
+                        RdaoGE178lUUVIlCig5aZbbGu4dsR7PUIVe5bjH4dJdVYYLuT5/r7etSJIyQiMMu
+                        wKKx/QPwt/cVhyTwfW16iLVyhtMcoC5hwY/NKSz3fnYnZU6QwIhQvsZmoMAm/C/Q</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://branko.my.salesforce.com/services/auth/sp/saml2/logout"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://branko.my.salesforce.com/services/auth/sp/saml2/logout"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://branko.my.salesforce.com?so=00D4P000000jU1o" index="0" isDefault="true"/>
+    </md:SPSSODescriptor>
+</md:EntityDescriptor>
